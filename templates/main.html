@@ -14,19 +14,404 @@
 </head>
 <body>
 
-	<header>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="position:fixed;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">dytila</a>
+            </div>
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#price-sec">PRICING</a></li>
+                    <li><a href="#contact-sec">CONTACT</a></li>
+                    <li><a href="team.html">MEET THE TEAM</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your Name<span class="caret"></span></a>
+                      <ul class="dropdown-menu" id="dropdown-menu">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="orders.html">Your orders</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="#">Chat with Dietician</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Logout</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!--End Navigation -->
 
-	</header><!-- end header -->
 
-	<div id="main">
-		<div id="container">
-			<h1>{{ page_heading }}</h1>
-		</div><!-- end container -->
-	</div><!-- end main -->
+    <!--Header section  -->
+    <div class="container" id="home">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <label style="margin-top:100px;color:#fff;font-size:100px;">dytila</label>
+                <h2 class="head-sub-main">The healthiest, nutrious and delicious food for Fitness Freaks!</h2>
+                
+                    <a class="btn btn-default btn-lg " data-toggle="modal" data-target="#log">Login </a>
+                    <div class="modal fade" id="log">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                     <div class="login_form form"  style="background-color:rgba(19, 35, 47, 0.6);">
+      
+                                          <ul class="tab-group">
+                                            <li class="tab active"><a href="#signup">Sign Up</a></li>
+                                            <li class="tab"><a href="#login">Log In</a></li>
+                                          </ul>
+                                          
+                                          <div class="tab-content">
+                                            <div id="signup">   
+                                              <h1>Sign Up for Free</h1>
+                                              
+                                              <form action="/" method="post">
+                                              
+                                              <div class="top-row">
+                                                <div class="field-wrap">
+                                                  <label>
+                                                    First Name<span class="req">*</span>
+                                                  </label>
+                                                  <input type="text" required autocomplete="off" />
+                                                </div>
+                                            
+                                                <div class="field-wrap">
+                                                  <label>
+                                                    Last Name<span class="req">*</span>
+                                                  </label>
+                                                  <input type="text"required autocomplete="off"/>
+                                                </div>
+                                              </div>
 
-	<footer>
+                                              <div class="field-wrap">
+                                                <label>
+                                                  Email Address<span class="req">*</span>
+                                                </label>
+                                                <input type="email"required autocomplete="off"/>
+                                              </div>
+                                              
+                                              <div class="field-wrap">
+                                                <label>
+                                                  Set A Password<span class="req">*</span>
+                                                </label>
+                                                <input type="password"required autocomplete="off"/>
+                                              </div>
+                                              
+                                              <button type="submit" class="button button-block"/>Get Started</button>
+                                              </form>
 
-	</footer><!-- end footer -->
+                                            </div>
+                                            
+                                            <div id="login">   
+                                              <h1>Welcome Back!</h1>
+                                              
+                                              <form action="/" method="post">
+                                              
+                                                <div class="field-wrap">
+                                                <label>
+                                                  Email Address<span class="req">*</span>
+                                                </label>
+                                                <input type="email"required autocomplete="off"/>
+                                              </div>
+                                              
+                                              <div class="field-wrap">
+                                                <label>
+                                                  Password<span class="req">*</span>
+                                                </label>
+                                                <input type="password"required autocomplete="off"/>
+                                              </div>
+                                              
+                                              <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+
+                                              
+                                              <button class="button button-block"/>Log In</button>
+                                              </form>
+
+                                            </div>
+                                            
+                                          </div><!-- tab-content -->
+                                          
+                                        </div> <!-- /form -->
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                
+                <a class="btn btn-danger btn-lg " href="shop.html">Order Now! </a>
+                <div class="head-last"></div>
+            </div>
+        </div>
+    </div>
+    <!--End Header section  -->
+
+
+    <!--words Section-->
+    <section class="for-full-back color-white" id="about">
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>In search for bodybuilding food ?</h1>
+                    <h4>
+                        <strong>We provide you high protein, low carbs and nutritious food at your VIT Hostel's door step!
+                        </strong>
+                    </h4>
+                </div>
+
+            </div>
+
+            <div class="row text-center space-pad">
+                <div class="col-md-6 ">
+
+                    <div class="about-div">
+
+                        <img src="assets/img/s1.png" width="70" height="60" style="z-index:1" />
+
+
+                        <h3>100% Fresh </h3>
+                        <p>
+                            Food we provide is made with 100% fresh ingredients<br>
+                             with minimum oil content.  
+                        </p>
+
+                    </div> 
+
+                </div>
+                <div class="col-md-6 ">
+
+                    <div class="about-div">
+
+                        <img src="assets/img/s2.png" width="70" height="65" style="z-index:1" />
+
+
+                        <h3 style="margin-top:15px;"> Quick Delivery</h3>
+                        <p>
+                            Quick Delivery at your door.<br>
+                            Food we provide will be deliver to you within 30min.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="for-full-back " id="Parallax-one">
+        <div class="container">
+
+            <div class="row text-center for-parallax-one">
+                <div class="col-md-6 ">
+                    <h3 style="color:#FFF;">Vegetarian Food (egg included)</h3>
+                    <h4>
+                        <strong>Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here.Text here. Text here. 
+                        </strong>
+                    </h4>
+                </div>
+                <div class="col-md-6 ">
+                    <h3 style="color:#FFF;">Non-Vegetarian Food</h3>
+                    <h4>
+                        <strong>Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here. Text here.Text here. Text here. 
+                        </strong>
+                    </h4>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!--./parallax one-->
+    <!--End words Section-->
+
+
+
+
+    <!-- Pricing Section -->
+
+    <section class="for-full-back color-white " id="price-sec">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>dytila Food Options</h1>
+                    <h4 style="color:#000;">
+                        <strong>Two different plans for you.
+                        </strong>
+                    </h4>
+                </div>
+
+            </div>
+            <div class="row text-center">
+
+               
+
+                    <div class="col-md-6">
+                        <ul class="plan">
+                            <li class="plan-head">Regular Plan</li>
+                            <li class="main-price">Price depends</li>
+                            <li><strong>Cash On Deliviry</strong></li>
+                            <li class="bottom">
+                                <a href="#contact-sec" class="btn btn-default">BOOK</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="plan">
+                            <li class="plan-head">Monthly Plan</li>
+                            <li class="main-price">4000 Rupees</li>
+                            <li><strong>Monthly payment</strong></li>
+                            <li class="bottom">
+                                <a href="#contact-sec" class="btn btn-default">BOOK</a>
+                            </li>
+                        </ul>
+                    </div>
+               
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="for-full-back for-parallax-two" id="Parallax-two">
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <label style="margin-top:70px;">Why dytila</label>
+                    <h4>
+                        <strong>We believe in fitness and 90% fitness is your food.
+                        In order to make fit individuals, we provide 100% fresh and secure bodybuilding food with properly
+                        calculated macros.
+                        </strong>
+                    </h4>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!--./parallax two-->
+    <!--End Pricing Section -->
+    
+    <!-- Sponsors -->
+    
+    <section class="for-full-back color-white " id="price-sec">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>Our Partners</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+
+               
+
+                    <div class="col-md-6">
+                        <ul class="plan sponser" >
+                            <li class="plan-head sponser-head" style="">Apna Dhaba</li>
+                            <li class="sponser_img" style=""><img src="assets/img/apna dhaba.jpg"> </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="plan sponser">
+                            <li class="plan-head sponser-head">falras</li>
+                            <li class="sponser_img"><img src="assets/img/bm2.jpg"> </li>  
+                        </ul>
+                    </div>
+               
+            </div>
+
+
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section class="for-full-back color-white " id="contact-sec">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-5 contact-cls">
+                    <h3>CONTACT US</h3>
+                    <div>
+                        <span><i class="fa fa-home"></i>&nbsp;Address: VIT University</span>
+                        <br />
+                        <span><i class="fa fa-phone"></i>&nbsp;Phone: 9999999999</span>
+                        <br />
+                        <span><i class="fa fa-envelope-o"></i>&nbsp;E-Mail: desifood_vit@gmail.com</span>
+                        <br />
+                    </div>
+                    <br />
+                    <div id="social-icon">
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h2>Have Queries? Ask US</h2>
+                    <p>
+                        Any sort of queries related to our products, payment and delivery will be answered.
+                        Just mail the queries and we'll get back to you shortly.
+                    </p>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Email address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Submit Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--End Contact Section -->
+    <!--footer Section -->
+    <div class="for-full-back" id="footer">
+        2016 www.desifood.com | All Right Reserved
+         
+    </div>
 
 	<!-- Load jQuery -->
 	<script src="http://www.google.com/jsapi"></script>
